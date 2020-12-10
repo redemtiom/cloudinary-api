@@ -1,0 +1,25 @@
+@import '~antd/dist/antd.css';
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    .card-container {
+        margin-top: 5%;
+        width: 80%;
+        .card-instructions {
+            display: flex;
+            text-align: justify;
+            font-family: 'Proza Libre', sans-serif;
+            font-size: 15px;
+        }
+        .card-table {
+            margin-bottom: 20px;
+        }
+        .upload-button {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
