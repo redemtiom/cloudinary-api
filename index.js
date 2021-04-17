@@ -12,7 +12,7 @@ app.use(bodyParser.json())
 
 app.use(routes(router))
 
-app.use(express.static(path.join(__dirname, 'cloudinary/build')));
+//app.use(express.static(path.join(__dirname, 'cloudinary/build')));
 
 app.listen(port, () => {
     console.log(`App listening on port ${port}!`)

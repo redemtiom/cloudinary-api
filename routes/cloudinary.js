@@ -5,4 +5,5 @@ const upload = multer({ dest: 'uploads/' })
 module.exports = (router) =>{
     router.route('/api/cloudinary')
         .post(upload.single('file'), cloudinaryController.uploadUrls)
+        .get(cloudinaryController.reportByFolder)
 }
